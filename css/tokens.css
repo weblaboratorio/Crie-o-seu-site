@@ -1,0 +1,119 @@
+/* ============================================
+   WEBLAB — DESIGN TOKENS
+   Single source of truth for all visual values
+   ============================================ */
+
+@layer tokens {
+  :root {
+    /* --- Color Palette (Dark — default) --- */
+    --color-bg-root:      #08080f;
+    --color-bg-surface:   #0f0f1a;
+    --color-bg-elevated:  #16162a;
+    --color-bg-hover:     #1e1e38;
+
+    --color-primary:      #7c3aed;
+    --color-primary-dim:  rgba(124, 58, 237, 0.15);
+    --color-primary-glow: rgba(124, 58, 237, 0.4);
+
+    --color-accent:       #10b981;
+    --color-accent-dim:   rgba(16, 185, 129, 0.12);
+
+    --color-danger:       #f43f5e;
+
+    --color-text-high:    #f9fafb;
+    --color-text-mid:     #9ca3af;
+    --color-text-low:     #4b5563;
+
+    --color-border:       rgba(255, 255, 255, 0.07);
+    --color-border-hover: rgba(124, 58, 237, 0.5);
+
+    /* --- Typography --- */
+    --font-sans:   'Inter', system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', 'Inter', sans-serif;
+
+    --text-xs:   clamp(0.7rem,  1.5vw, 0.75rem);
+    --text-sm:   clamp(0.8rem,  1.8vw, 0.875rem);
+    --text-base: clamp(0.9rem,  2vw,   1rem);
+    --text-lg:   clamp(1rem,    2.5vw, 1.125rem);
+    --text-xl:   clamp(1.1rem,  3vw,   1.25rem);
+    --text-2xl:  clamp(1.25rem, 3.5vw, 1.5rem);
+    --text-3xl:  clamp(1.5rem,  4vw,   2rem);
+    --text-4xl:  clamp(2rem,    5vw,   2.75rem);
+    --text-5xl:  clamp(2.5rem,  6vw,   3.75rem);
+    --text-6xl:  clamp(3rem,    8vw,   5rem);
+
+    /* --- Spacing --- */
+    --space-1:  0.25rem;
+    --space-2:  0.5rem;
+    --space-3:  0.75rem;
+    --space-4:  1rem;
+    --space-5:  1.25rem;
+    --space-6:  1.5rem;
+    --space-8:  2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    /* --- Layout --- */
+    --container-max: 1200px;
+    --container-narrow: 760px;
+    --container-wide: 1400px;
+
+    /* --- Borders --- */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+    --radius-full: 9999px;
+
+    /* --- Shadows --- */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.5);
+    --shadow-md: 0 4px 24px rgba(0,0,0,0.4);
+    --shadow-primary: 0 8px 32px -4px var(--color-primary-glow);
+    --shadow-accent: 0 8px 32px -4px rgba(16, 185, 129, 0.3);
+
+    /* --- Transitions --- */
+    --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --duration-fast:   150ms;
+    --duration-base:   300ms;
+    --duration-slow:   600ms;
+    --duration-slower: 900ms;
+
+    /* --- Z-Index --- */
+    --z-below:   -1;
+    --z-base:     0;
+    --z-raised:  10;
+    --z-overlay: 100;
+    --z-sticky:  200;
+    --z-modal:   300;
+  }
+
+  /* ---- LIGHT MODE ---- */
+  [data-theme="light"] {
+    --color-bg-root:      #f8f9fb;
+    --color-bg-surface:   #ffffff;
+    --color-bg-elevated:  #f0f0f5;
+    --color-bg-hover:     #e8e8f0;
+
+    --color-primary:      #6d28d9;
+    --color-primary-dim:  rgba(109, 40, 217, 0.08);
+    --color-primary-glow: rgba(109, 40, 217, 0.25);
+
+    --color-accent:       #059669;
+    --color-accent-dim:   rgba(5, 150, 105, 0.1);
+
+    --color-text-high:    #0f0f1a;
+    --color-text-mid:     #4b5563;
+    --color-text-low:     #9ca3af;
+
+    --color-border:       rgba(0, 0, 0, 0.08);
+    --color-border-hover: rgba(109, 40, 217, 0.4);
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 24px rgba(0,0,0,0.08);
+  }
+}

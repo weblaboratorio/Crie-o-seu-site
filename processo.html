@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processo & FAQ — Weblab</title>
+  <meta name="description" content="Entenda como a Weblab trabalha: metodologia em 7 etapas, prazos reais, contrato digital e respostas às principais dúvidas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Weblab — Início">
+        <img src="public/logo.png" alt="Weblab">
+      </a>
+      <nav class="header__nav" aria-label="Navegação principal">
+        <ul class="nav__links">
+          <li><a href="servicos.html" class="nav__link">Soluções</a></li>
+          <li><a href="servicos.html#pricing" class="nav__link">Preços</a></li>
+          <li><a href="processo.html" class="nav__link">Processo</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+        <div class="header__cta">
+          <button id="theme-toggle" aria-label="Ativar modo claro" title="Alternar tema">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fa-brands fa-whatsapp"></i> Falar agora
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="section" style="padding-top: calc(var(--space-32) + 72px); padding-bottom: var(--space-16);">
+      <div class="container">
+        <div class="hero__inner" style="max-width: 680px;">
+          <div class="hero__eyebrow reveal">
+            <span class="badge badge--primary">Metodologia Weblab</span>
+          </div>
+          <h1 class="reveal reveal-delay-1" style="font-size: var(--text-5xl);">
+            Transparência<br><span class="gradient-text">do primeiro contato ao lançamento.</span>
+          </h1>
+          <p class="hero__subtitle reveal reveal-delay-2" style="margin-bottom: 0;">
+            Você sabe exatamente o que acontece em cada etapa, quem faz o quê, e em quanto tempo. Sem surpresas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS TIMELINE -->
+    <section id="process" class="section" style="padding-top: 0;">
+      <div class="container">
+        <div style="max-width: 680px;">
+          <div class="process__timeline">
+            <div class="process__line" aria-hidden="true"></div>
+
+            <div class="process__step reveal">
+              <div class="process__step-num">01</div>
+              <div class="process__step-content">
+                <div class="process__step-title">Consultoria gratuita</div>
+                <div class="process__step-desc">Entendemos o negócio, o público, as automações desejadas e o escopo real do projeto. Nada de formulário genérico — é uma conversa de verdade.</div>
+                <div class="process__step-time"><i class="fa-solid fa-clock"></i> &nbsp;30 min via WhatsApp</div>
+              </div>
+            </div>
+
+            <div class="process__step reveal">
+              <div class="process__step-num">02</div>
+              <div class="process__step-content">
+                <div class="process__step-title">Proposta detalhada</div>
+                <div class="process__step-desc">Um PDF completo com escopo, entregáveis, tecnologias, prazo e valor. Enviado direto no seu WhatsApp em até 24h após o briefing.</div>
+                <div class="process__step-time"><i class="fa-solid fa-clock"></i> &nbsp;Até 24h após briefing</div>
+              </div>
+            </div>
+
+            <div class="process__step reveal">
+              <div class="process__step-num">03</div>
+              <div class="process__step-content">
+                <div class="process__step-title">Contrato e pagamento da entrada</div>
+                <div class="process__step-desc">Assinatura digital por ambas as partes. O projeto só inicia após a formalização e o pagamento de 50% de entrada via Pix ou Cartão.</div>
+                <div class="process__step-time"><i class="fa-solid fa-shield-halved"></i> &nbsp;Segurança para ambos os lados</div>
+              </div>
+            </div>
+
+            <div class="process__step reveal">
+              <div class="process__step-num">04</div>
+              <div class="process__step-content">
+                <div class="process__step-title">Design exclusivo</div>
+                <div class="process__step-desc">Protótipo visual criado do zero no Figma, sem usar templates. Você aprova antes de qualquer linha de código ser escrita. 2 rodadas de ajustes inclusas.</div>
+                <div class="process__step-time"><i class="fa-solid fa-clock"></i> &nbsp;2–3 dias úteis</div>
+              </div>
+            </div>
+
+            <div class="process__step reveal">
+              <div class="process__step-num">05</div>
+              <div class="process__step-content">
+                <div class="process__step-title">Desenvolvimento</div>
+                <div class="process__step-desc">Código limpo, semântico e performático. Integramos APIs, backend, banco de dados e automações conforme o escopo aprovado.</div>
+                <div class="process__step-time"><i class="fa-solid fa-clock"></i> &nbsp;3–5 dias úteis</div>
+              </div>
+            </div>
+
+            <div class="process__step reveal">
+              <div class="process__step-num">06</div>
+              <div class="process__step-content">
+                <div class="process__step-title">Testes, QA e ajustes finais</div>
+                <div class="process__step-desc">Testamos performance, responsividade, funcionamento de todas as APIs e fluxos de automação antes de liberar para você. Você aprova. Pagamento dos 50% restantes.</div>
+                <div class="process__step-time"><i class="fa-solid fa-clock"></i> &nbsp;1 dia útil</div>
+              </div>
+            </div>
+
+            <div class="process__step reveal">
+              <div class="process__step-num">07</div>
+              <div class="process__step-content">
+                <div class="process__step-title">Lançamento & entrega de credenciais</div>
+                <div class="process__step-desc">Publicamos o site e entregamos todas as credenciais (hospedagem, domínio, painel). Opcionalmente, iniciamos o Plano de Suporte Mensal.</div>
+                <div class="process__step-time"><i class="fa-solid fa-infinity"></i> &nbsp;Suporte mensal disponível</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">FAQ</span>
+          <h2>Dúvidas que<br><span class="gradient-text">todo mundo tem.</span></h2>
+          <p>Se ainda restar alguma dúvida, é só chamar no WhatsApp.</p>
+        </div>
+        <div class="container--narrow">
+          <div class="accordion reveal">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                Qual o prazo real de entrega?
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-body">
+                <p>Nossa média é de 7 dias corridos para Landing Pages e Sites Institucionais simples. Web Apps têm prazo definido no briefing conforme a complexidade técnica. Projetos com taxa de urgência negociada podem ter prazo reduzido.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                O que acontece se eu não gostar do design?
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-body">
+                <p>Todo projeto inclui 2 rodadas completas de ajustes sem custo adicional. Nosso processo começa com um briefing aprofundado exatamente para minimizar retrabalho. A aprovação do design acontece antes de qualquer código ser escrito.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                Vocês hospedam e mantêm o site após a entrega?
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-body">
+                <p>Sim. Oferecemos um Plano de Suporte Mensal que inclui hospedagem, monitoramento de uptime, atualizações de segurança e relatório mensal com dados de acesso e conversão. O cliente que não quiser o plano recebe todas as credenciais e pode hospedar onde preferir.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                Meu site vai aparecer bem no Google?
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-body">
+                <p>Todos os projetos são desenvolvidos com SEO técnico desde a fundação: HTML semântico, Core Web Vitals otimizados, metatags, schema markup, sitemap e robots.txt. Não garantimos posição orgânica (ninguém pode), mas garantimos que a base técnica é impecável e competitiva.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                Como funciona o pagamento?
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-body">
+                <p>50% de entrada para iniciarmos o projeto, e 50% na entrega e aprovação final, antes da publicação. Aceitamos Pix e Cartão de Crédito via API do Mercado Pago. Todo projeto é formalizado com contrato e assinatura digital de ambas as partes.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                Vocês fazem e-commerce?
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-body">
+                <p>Sim, desenvolvemos lojas com integração ao Mercado Pago para recebimento via Pix, Cartão e Boleto. Para lojas de grande escala com catálogo extenso, consultamos caso a caso para indicar a arquitetura mais adequada.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                Posso ter acesso ao código após a entrega?
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-body">
+                <p>Sim. Todo o código-fonte é entregue ao cliente junto com as credenciais no momento do lançamento. Você tem total propriedade sobre o que foi construído.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--sm" style="background: var(--color-bg-surface); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <span class="section-label">Ainda tem dúvidas?</span>
+          <h2>A gente explica<br><span class="gradient-text">tudo no WhatsApp.</span></h2>
+          <p>Primeira conversa é gratuita e sem compromisso.</p>
+          <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--primary btn--xl">
+            <i class="fa-brands fa-whatsapp"></i> Falar agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="public/logo.png" alt="Weblab" style="height: 30px; margin-bottom: var(--space-4);">
+          <p>Ecossistemas digitais de alto impacto. Design exclusivo, backend robusto e automações reais.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Páginas</div>
+          <ul class="footer__links">
+            <li><a href="servicos.html" class="footer__link">Soluções & Preços</a></li>
+            <li><a href="processo.html" class="footer__link">Processo & FAQ</a></li>
+            <li><a href="contato.html" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contato</div>
+          <ul class="footer__links">
+            <li><a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="footer__link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Weblab. Todos os direitos reservados.</span>
+        <span class="footer__copy">Site desenvolvido pela própria Weblab.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

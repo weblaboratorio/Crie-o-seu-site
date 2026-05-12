@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weblab — Ecossistemas Digitais de Alto Impacto</title>
+  <meta name="description" content="Desenvolvemos sites, web apps e automações completas com backend, banco de dados e telemetria. Design exclusivo, entrega em 7 dias.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Weblab">
+        <img src="public/logo.png" alt="Weblab">
+      </a>
+      <nav class="header__nav" aria-label="Navegação principal">
+        <ul class="nav__links">
+          <li><a href="servicos.html" class="nav__link">Soluções</a></li>
+          <li><a href="servicos.html#pricing" class="nav__link">Preços</a></li>
+          <li><a href="processo.html" class="nav__link">Processo</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+        <div class="header__cta">
+          <button id="theme-toggle" aria-label="Ativar modo claro" title="Alternar tema">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fa-brands fa-whatsapp"></i> Falar agora
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__eyebrow reveal">
+            <span class="badge badge--live badge--green">Aceitando projetos</span>
+            <span class="badge badge--primary">Entrega em até 7 dias</span>
+          </div>
+          <h1 class="hero__title reveal reveal-delay-1">
+            O site que seu<br>
+            <span class="gradient-text">negócio merece.</span>
+          </h1>
+          <p class="hero__subtitle reveal reveal-delay-2">
+            Desenvolvemos sistemas web completos — design exclusivo, backend robusto, automações reais e análise de dados. Não entregamos templates. Entregamos ferramentas de trabalho.
+          </p>
+          <div class="hero__actions reveal reveal-delay-3">
+            <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--primary btn--xl">
+              <i class="fa-brands fa-whatsapp"></i>
+              Iniciar consultoria gratuita
+            </a>
+            <a href="servicos.html" class="btn btn--ghost btn--xl">Ver soluções <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="hero__proof reveal reveal-delay-4">
+            <span class="hero__proof-item"><i class="fa-solid fa-check-circle"></i> Design 100% exclusivo</span>
+            <span class="hero__proof-item"><i class="fa-solid fa-check-circle"></i> 2 rodadas de ajustes inclusas</span>
+            <span class="hero__proof-item"><i class="fa-solid fa-check-circle"></i> Pix ou Cartão via Mercado Pago</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH BAR -->
+    <div id="tech-bar">
+      <div class="container tech-bar__inner">
+        <span class="tech-bar__label">Stack</span>
+        <div class="tech-bar__separator" aria-hidden="true"></div>
+        <div class="tech-bar__items">
+          <span class="tech-bar__item"><i class="fa-brands fa-node-js" style="color:#6cc24a"></i> Node.js</span>
+          <span class="tech-bar__item"><i class="fa-brands fa-react" style="color:#61dafb"></i> React</span>
+          <span class="tech-bar__item"><i class="fa-brands fa-figma" style="color:#f24e1e"></i> Figma</span>
+          <span class="tech-bar__item"><i class="fa-brands fa-whatsapp" style="color:#25D366"></i> WhatsApp API</span>
+          <span class="tech-bar__item"><i class="fa-brands fa-google" style="color:#4285F4"></i> Google APIs</span>
+          <span class="tech-bar__item"><i class="fa-solid fa-credit-card" style="color:#00b1ea"></i> Mercado Pago</span>
+          <span class="tech-bar__item"><i class="fa-solid fa-database" style="color:#a78bfa"></i> PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES PREVIEW -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Soluções</span>
+          <h2>Construído para converter.<br><span class="gradient-text">Não só para enfeitar.</span></h2>
+          <p>Cada projeto é desenvolvido do zero, com foco em performance, automação e resultado de negócio.</p>
+        </div>
+        <div class="services__grid" data-stagger>
+          <div class="card">
+            <div class="card__number">01</div>
+            <div class="card__icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Landing Pages</h3>
+            <p>Alta conversão, integração direta com WhatsApp e CRM, design exclusivo. Ideal para campanhas e lançamentos.</p>
+            <div class="card__price">a partir de R$ 1.500</div>
+            <div class="card__tags">
+              <span class="tag">WhatsApp API</span><span class="tag">Analytics</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__number">02</div>
+            <div class="card__icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Sites Institucionais</h3>
+            <p>Autoridade digital com SEO técnico, Core Web Vitals otimizados e painel de administração sem código.</p>
+            <div class="card__price">a partir de R$ 3.000</div>
+            <div class="card__tags">
+              <span class="tag">SEO técnico</span><span class="tag">Google Agenda</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__number">03</div>
+            <div class="card__icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Web Apps & Sistemas</h3>
+            <p>Backend, banco de dados, telemetria e automações entre plataformas. Do MVP ao produto escalável.</p>
+            <div class="card__price">sob consulta</div>
+            <div class="card__tags">
+              <span class="tag">Backend</span><span class="tag">Telemetria</span>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top: var(--space-10);">
+          <a href="servicos.html" class="btn btn--ghost btn--lg">Ver todos os planos e preços <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WEBLAB (compact on home) -->
+    <section id="why" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Por que Weblab</span>
+          <h2>O que a concorrência<br><span class="gradient-text">não entrega.</span></h2>
+          <p>A diferença está no que acontece depois do design.</p>
+        </div>
+        <div class="reveal">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Recurso</th>
+                <th class="highlighted">Weblab</th>
+                <th>Freelancer</th>
+                <th>Template</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Design 100% exclusivo</td><td class="highlighted"><i class="fa-solid fa-circle-check icon-yes"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td></tr>
+              <tr><td>Backend + Banco de Dados</td><td class="highlighted"><i class="fa-solid fa-circle-check icon-yes"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td></tr>
+              <tr><td>Automações (WhatsApp, Google)</td><td class="highlighted"><i class="fa-solid fa-circle-check icon-yes"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td></tr>
+              <tr><td>Telemetria e análise de dados</td><td class="highlighted"><i class="fa-solid fa-circle-check icon-yes"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td></tr>
+              <tr><td>Contrato com assinatura digital</td><td class="highlighted"><i class="fa-solid fa-circle-check icon-yes"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td><td><i class="fa-solid fa-circle-xmark icon-no"></i></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="text-align:center; margin-top: var(--space-10);">
+          <a href="processo.html" class="btn btn--ghost btn--lg">Ver nossa metodologia completa <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME CTA -->
+    <section id="contact" class="section section--sm">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <span class="section-label">Pronto para começar?</span>
+          <h2>Sua ideia merece um<br><span class="gradient-text">parceiro técnico de verdade.</span></h2>
+          <p>Primeira conversa gratuita. Sem compromisso. Curadoria personalizada do que faz sentido para o seu negócio.</p>
+          <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--primary btn--xl">
+            <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="public/logo.png" alt="Weblab" style="height: 30px; margin-bottom: var(--space-4);">
+          <p>Ecossistemas digitais de alto impacto. Design exclusivo, backend robusto e automações reais.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Páginas</div>
+          <ul class="footer__links">
+            <li><a href="servicos.html" class="footer__link">Soluções & Preços</a></li>
+            <li><a href="processo.html" class="footer__link">Processo & FAQ</a></li>
+            <li><a href="contato.html" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contato</div>
+          <ul class="footer__links">
+            <li><a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="footer__link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Weblab. Todos os direitos reservados.</span>
+        <span class="footer__copy">Site desenvolvido pela própria Weblab.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

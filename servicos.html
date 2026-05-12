@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluções & Preços — Weblab</title>
+  <meta name="description" content="Conheça todos os planos da Weblab: Landing Pages, Sites Institucionais e Web Apps com backend completo. Preços transparentes e sem surpresas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Weblab — Início">
+        <img src="public/logo.png" alt="Weblab">
+      </a>
+      <nav class="header__nav" aria-label="Navegação principal">
+        <ul class="nav__links">
+          <li><a href="servicos.html" class="nav__link">Soluções</a></li>
+          <li><a href="servicos.html#pricing" class="nav__link">Preços</a></li>
+          <li><a href="processo.html" class="nav__link">Processo</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+        <div class="header__cta">
+          <button id="theme-toggle" aria-label="Ativar modo claro" title="Alternar tema">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+            <i class="fa-brands fa-whatsapp"></i> Falar agora
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="section" style="padding-top: calc(var(--space-32) + 72px); padding-bottom: var(--space-16);">
+      <div class="container">
+        <div class="hero__inner" style="max-width: 680px;">
+          <div class="hero__eyebrow reveal">
+            <span class="badge badge--primary">Soluções Weblab</span>
+          </div>
+          <h1 class="reveal reveal-delay-1" style="font-size: var(--text-5xl);">
+            Cada projeto,<br><span class="gradient-text">uma solução sob medida.</span>
+          </h1>
+          <p class="hero__subtitle reveal reveal-delay-2" style="margin-bottom: 0;">
+            Não trabalhamos com templates ou pacotes genéricos. Cada entrega é arquitetada do zero para o seu negócio, com as integrações que você realmente precisa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES DETAILED -->
+    <section id="services" class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="services__grid" data-stagger>
+          <!-- Landing Page -->
+          <div class="card">
+            <div class="card__number">01</div>
+            <div class="card__icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Landing Pages</h3>
+            <p>Para campanhas, lançamentos ou captação de leads. Cada elemento é desenhado para maximizar a conversão — do headline ao CTA.</p>
+            <ul style="margin: var(--space-6) 0; display: flex; flex-direction: column; gap: var(--space-3);">
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Design exclusivo orientado à conversão</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Formulário com notificação via WhatsApp</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Google Analytics & Meta Pixel integrados</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Responsivo e rápido (Core Web Vitals)</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> 2 rodadas de ajustes inclusas</li>
+            </ul>
+            <div class="card__price">a partir de R$ 1.500</div>
+            <div class="card__tags">
+              <span class="tag">WhatsApp API</span><span class="tag">Analytics</span><span class="tag">Meta Pixel</span>
+            </div>
+          </div>
+
+          <!-- Site Institucional -->
+          <div class="card">
+            <div class="card__number">02</div>
+            <div class="card__icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Sites Institucionais</h3>
+            <p>Presença digital completa para profissionais e empresas. Autoridade, SEO técnico e painel de conteúdo sem precisar de código.</p>
+            <ul style="margin: var(--space-6) 0; display: flex; flex-direction: column; gap: var(--space-3);">
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Múltiplas páginas com identidade consistente</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> SEO técnico avançado (schema, sitemap, OG)</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Integração com Google Agenda (agendamentos)</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Painel de administração de conteúdo</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Telemetria básica de acesso e conversão</li>
+            </ul>
+            <div class="card__price">a partir de R$ 3.000</div>
+            <div class="card__tags">
+              <span class="tag">SEO</span><span class="tag">Google Agenda</span><span class="tag">CMS</span>
+            </div>
+          </div>
+
+          <!-- Web App -->
+          <div class="card">
+            <div class="card__number">03</div>
+            <div class="card__icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Web Apps & Sistemas</h3>
+            <p>Quando o seu negócio precisa de mais do que um site. Backend, banco de dados e automações que trabalham por você 24h por dia.</p>
+            <ul style="margin: var(--space-6) 0; display: flex; flex-direction: column; gap: var(--space-3);">
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Backend Node.js + banco de dados PostgreSQL</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Telemetria de dados e dashboard analítico</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Integrações com APIs externas (CRM, ERPs)</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Pagamentos via Mercado Pago API</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check text-accent"></i> Arquitetura escalável e documentada</li>
+            </ul>
+            <div class="card__price">sob consulta (base R$ 5.000+)</div>
+            <div class="card__tags">
+              <span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADD-ONS -->
+    <section class="section" style="background: var(--color-bg-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Serviços Adicionais</span>
+          <h2>Recorrência que<br><span class="gradient-text">faz sentido.</span></h2>
+          <p>Após a entrega, mantemos seu site vivo, seguro e gerando dados para você.</p>
+        </div>
+        <div class="grid-3" data-stagger>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Plano de Suporte Mensal</h3>
+            <p>Hospedagem, monitoramento de uptime, atualizações de segurança e suporte técnico prioritário.</p>
+            <div class="card__price" style="color: var(--color-primary);">sob consulta / mês</div>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Relatório de Dados Mensal</h3>
+            <p>Análise completa da telemetria do seu site: origens de tráfego, comportamento do usuário e pontos de melhoria.</p>
+            <div class="card__price" style="color: var(--color-primary);">incluso no plano</div>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Taxa de Urgência</h3>
+            <p>Precisa do projeto para ontem? Priorizamos seu projeto com prazo reduzido mediante acréscimo sob consulta.</p>
+            <div class="card__price" style="color: var(--color-primary);">sob consulta</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Preços</span>
+          <h2>Sem surpresas.<br><span class="gradient-text">Preço justo e claro.</span></h2>
+          <p>50% de entrada para iniciar. 50% na entrega. Pix ou Cartão via Mercado Pago.</p>
+        </div>
+        <div class="pricing__grid">
+          <div class="pricing-card reveal">
+            <div class="pricing-card__header">
+              <div class="pricing-card__name">Landing Page</div>
+              <div class="pricing-card__price"><span class="gradient-text--green">R$ 1.500</span></div>
+              <div class="pricing-card__price-label">a partir de · pagamento 50/50</div>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Design 100% exclusivo</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Formulário com integração WhatsApp</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Analytics e rastreamento</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Responsivo (mobile-first)</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> 2 rodadas de ajustes</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Entrega em até 7 dias</li>
+            </ul>
+            <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--ghost" style="width:100%; justify-content:center;">Solicitar orçamento</a>
+          </div>
+          <div class="pricing-card pricing-card--featured reveal reveal-delay-1">
+            <div class="pricing-card__header">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: var(--space-3);">
+                <div class="pricing-card__name">Site Institucional</div>
+                <span class="badge badge--primary">Mais pedido</span>
+              </div>
+              <div class="pricing-card__price"><span class="gradient-text">R$ 3.000</span></div>
+              <div class="pricing-card__price-label">a partir de · pagamento 50/50</div>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Tudo da Landing Page</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Múltiplas páginas</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> SEO técnico avançado</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Integração Google Agenda</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Painel de administração</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Relatório mensal de dados</li>
+            </ul>
+            <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--primary" style="width:100%; justify-content:center;">
+              <i class="fa-brands fa-whatsapp"></i> Quero este plano
+            </a>
+          </div>
+          <div class="pricing-card reveal reveal-delay-2">
+            <div class="pricing-card__header">
+              <div class="pricing-card__name">Web App & Sistema</div>
+              <div class="pricing-card__price" style="font-size: var(--text-4xl);">Sob consulta</div>
+              <div class="pricing-card__price-label">base a partir de R$ 5.000</div>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Backend + Banco de Dados</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Telemetria e análise de dados</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Automações com APIs externas</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Integração Mercado Pago</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Arquitetura escalável</li>
+              <li class="pricing-card__feature"><i class="fa-solid fa-check"></i> Suporte mensal incluso</li>
+            </ul>
+            <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--ghost" style="width:100%; justify-content:center;">Solicitar orçamento</a>
+          </div>
+        </div>
+        <p class="pricing__note">
+          <i class="fa-solid fa-lock"></i>
+          Contrato com assinatura digital em todos os projetos. Política de 2 rodadas de ajustes inclusas.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--sm">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <span class="section-label">Pronto?</span>
+          <h2>Vamos construir<br><span class="gradient-text">algo incrível juntos.</span></h2>
+          <p>Envie uma mensagem. Consultoria inicial gratuita e sem compromisso.</p>
+          <a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="btn btn--primary btn--xl">
+            <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="public/logo.png" alt="Weblab" style="height: 30px; margin-bottom: var(--space-4);">
+          <p>Ecossistemas digitais de alto impacto. Design exclusivo, backend robusto e automações reais.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Páginas</div>
+          <ul class="footer__links">
+            <li><a href="servicos.html" class="footer__link">Soluções & Preços</a></li>
+            <li><a href="processo.html" class="footer__link">Processo & FAQ</a></li>
+            <li><a href="contato.html" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contato</div>
+          <ul class="footer__links">
+            <li><a href="https://wa.me/5511951193560" target="_blank" rel="noopener" class="footer__link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Weblab. Todos os direitos reservados.</span>
+        <span class="footer__copy">Site desenvolvido pela própria Weblab.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
