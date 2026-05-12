@@ -70,4 +70,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- Mobile nav toggle (hamburger) ---
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile nav when clicking a link
+    mobileNav.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
 });
