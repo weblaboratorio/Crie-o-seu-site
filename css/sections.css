@@ -488,7 +488,7 @@
 
   .footer__inner {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1.2fr 1fr 1.2fr;
     gap: var(--space-12);
   }
 
@@ -521,6 +521,26 @@
   }
 
   .footer__link:hover { color: var(--color-text-high); }
+
+  .footer__payment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: center;
+    margin-top: var(--space-2);
+  }
+
+  .footer__payment img {
+    height: 20px;
+    width: auto;
+    filter: none;
+    opacity: 1;
+    transition: transform var(--duration-base) var(--ease-out);
+  }
+
+  .footer__payment img:hover {
+    transform: translateY(-3px) scale(1.1);
+  }
 
   .footer__bottom {
     margin-top: var(--space-12);
